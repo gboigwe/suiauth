@@ -1,7 +1,5 @@
 # SuiAuth: Decentralized Identity & Authentication Solution
 
-![SuiAuth Logo](https://via.placeholder.com/200x60?text=SuiAuth)
-
 SuiAuth is a decentralized identity and authentication solution built on Sui blockchain that leverages zkLogin to provide secure, privacy-preserving authentication for dApps. It enables users to authenticate with familiar OAuth providers while maintaining privacy and security on-chain.
 
 ## 🔐 Features
