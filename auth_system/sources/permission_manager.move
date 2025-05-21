@@ -13,7 +13,6 @@ use std::string::{Self, String};
 use auth_system::identity_registry::{Self, Identity};
 use sui::clock::{Self, Clock};
 use sui::dynamic_field as df;
-use auth_system::identity_registry::id_mut;
 
 // ======== Error codes ========
 const ENotAuthorized: u64 = 1;
