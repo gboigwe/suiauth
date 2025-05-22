@@ -41,7 +41,7 @@ The project is structured into two main components:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/suiauth.git
+git clone https://github.com/gboigwe/suiauth.git
 cd suiauth
 ```
 
