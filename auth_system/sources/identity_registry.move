@@ -4,6 +4,7 @@
 /// @title Identity Registry Module
 /// @notice Core identity management for SuiAuth
 /// @dev Manages user identities with zkLogin verification
+#[allow(unused_const)]
 module auth_system::identity_registry;
 
 use sui::event;
@@ -216,6 +217,16 @@ public entry fun register(
 
 // ======== Accessory functions =======
 
+/// @notice Get the ID of an identity
+public fun id(identity: &Identity): &UID {
+    &identity.id
+}
+
+/// @notice Get a mutable reference to the identity
+public fun id_mut(identity: &mut Identity): &mut UID {
+    &mut identity.id
+}
+
 // @notice Check if an identity is active
 public fun is_active(identity: &Identity): bool {
     identity.active
@@ -276,7 +287,8 @@ public fun get_info(identity: &Identity): IdentityInfo {
 }
 
 // ======== Update functions ========
-    
+// Entry functions:  are type of functions that can be called directly in a transacction
+
 /// @notice Update the name of an identity
 public entry fun update_name(
     identity: &mut Identity,
